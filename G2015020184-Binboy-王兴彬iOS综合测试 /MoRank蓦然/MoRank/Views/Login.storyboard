@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Wecome Controller-->
+        <scene sceneID="KGZ-nU-oed">
+            <objects>
+                <viewController storyboardIdentifier="BYWecomeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="heu-5G-I9Z" customClass="BYWecomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dl-4l-6PR"/>
+                        <viewControllerLayoutGuide type="bottom" id="fSu-FL-jod"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vgT-2u-sbL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="hGH-Xa-74g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-y2-bDo">
+                                <rect key="frame" x="270" y="92" width="60" height="90"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eN-KG-mNP">
+                                <rect key="frame" x="5" y="523" width="292" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="8f7-LP-v1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="登录" backgroundImage="button_blue"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="heu-5G-I9Z" eventType="touchUpInside" id="uwn-k9-kG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdx-Y7-hWs">
+                                <rect key="frame" x="302" y="523" width="292" height="65"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="注册" backgroundImage="button_red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registButtonClicked:" destination="heu-5G-I9Z" eventType="touchUpInside" id="4gH-8W-o0S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-Fn-YNO">
+                                <rect key="frame" x="253" y="287" width="94" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.009270870451" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现 · 分享 · 回首" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C5-du-OCr">
+                                <rect key="frame" x="235" y="341" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80816361660000002" green="1" blue="0.54512033660000003" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSu-FL-jod" firstAttribute="top" secondItem="4eN-KG-mNP" secondAttribute="bottom" constant="12" id="4xH-Be-lPQ"/>
+                            <constraint firstItem="Mdx-Y7-hWs" firstAttribute="width" secondItem="4eN-KG-mNP" secondAttribute="width" id="EQz-57-T7O"/>
+                            <constraint firstItem="iIZ-y2-bDo" firstAttribute="top" secondItem="4dl-4l-6PR" secondAttribute="bottom" constant="72" id="F8f-t3-gUZ"/>
+                            <constraint firstAttribute="trailing" secondItem="hGH-Xa-74g" secondAttribute="trailing" id="Lcl-Ix-sST"/>
+                            <constraint firstAttribute="trailing" secondItem="hGH-Xa-74g" secondAttribute="trailing" id="R5s-ny-HoM"/>
+                            <constraint firstItem="iIZ-y2-bDo" firstAttribute="centerX" secondItem="vgT-2u-sbL" secondAttribute="centerX" id="SgZ-4w-SpR"/>
+                            <constraint firstItem="fSu-FL-jod" firstAttribute="top" secondItem="hGH-Xa-74g" secondAttribute="bottom" id="TO1-kB-ZCe"/>
+                            <constraint firstItem="4eN-KG-mNP" firstAttribute="trailing" secondItem="hGH-Xa-74g" secondAttribute="centerX" constant="-3" id="WlY-ML-5lE"/>
+                            <constraint firstItem="fSu-FL-jod" firstAttribute="top" secondItem="Mdx-Y7-hWs" secondAttribute="bottom" constant="12" id="a1G-29-unH"/>
+                            <constraint firstItem="hGH-Xa-74g" firstAttribute="top" secondItem="vgT-2u-sbL" secondAttribute="top" id="bhW-Fy-gry"/>
+                            <constraint firstItem="ScE-Fn-YNO" firstAttribute="centerY" secondItem="vgT-2u-sbL" secondAttribute="centerY" id="fGN-xq-NFP"/>
+                            <constraint firstItem="hGH-Xa-74g" firstAttribute="leading" secondItem="vgT-2u-sbL" secondAttribute="leading" id="fWA-fz-pqg"/>
+                            <constraint firstItem="6C5-du-OCr" firstAttribute="top" secondItem="ScE-Fn-YNO" secondAttribute="bottom" constant="28" id="g7P-tk-htU"/>
+                            <constraint firstItem="Mdx-Y7-hWs" firstAttribute="height" secondItem="4eN-KG-mNP" secondAttribute="height" id="gWT-3p-lTH"/>
+                            <constraint firstItem="ScE-Fn-YNO" firstAttribute="centerX" secondItem="vgT-2u-sbL" secondAttribute="centerX" id="gj5-F9-pFA"/>
+                            <constraint firstItem="Mdx-Y7-hWs" firstAttribute="leading" secondItem="hGH-Xa-74g" secondAttribute="centerX" constant="2" id="jSA-aU-MlO"/>
+                            <constraint firstItem="6C5-du-OCr" firstAttribute="centerX" secondItem="vgT-2u-sbL" secondAttribute="centerX" id="kTK-Xo-Dii"/>
+                            <constraint firstItem="4eN-KG-mNP" firstAttribute="leading" secondItem="vgT-2u-sbL" secondAttribute="leading" constant="5" id="qdm-nE-o8o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="4eN-KG-mNP" id="XNy-hu-cCA"/>
+                        <outlet property="registButton" destination="Mdx-Y7-hWs" id="vAD-jH-qvU"/>
+                        <outlet property="sloganLabel" destination="6C5-du-OCr" id="Hn1-Ei-YaK"/>
+                        <outlet property="welcomLabel" destination="ScE-Fn-YNO" id="196-Xz-hHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sl6-kl-fbC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="272"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_blue" width="375" height="120"/>
+        <image name="button_red" width="375" height="120"/>
+        <image name="login_background" width="750" height="1334"/>
+        <image name="logo" width="60" height="90"/>
+    </resources>
+</document>
