@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BYChangeCityViewController">
+            <connections>
+                <outlet property="coverView" destination="aEo-QZ-HmH" id="bcv-dt-PpU"/>
+                <outlet property="searchBar" destination="OOF-oB-Vs9" id="Imr-XS-I4b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="429"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f0d-YD-Rwl">
+                    <rect key="frame" x="0.0" y="49" width="453" height="380"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pPn-42-R6J"/>
+                        <outlet property="delegate" destination="-1" id="sLC-2I-WdF"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-QZ-HmH">
+                    <rect key="frame" x="0.0" y="44" width="453" height="385"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <searchBar contentMode="redraw" placeholder="请输入要搜索的城市名称" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-oB-Vs9">
+                    <rect key="frame" x="0.0" y="0.0" width="453" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jnR-Mz-oOi"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jqd-bD-vU5"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aEo-QZ-HmH" firstAttribute="top" secondItem="OOF-oB-Vs9" secondAttribute="bottom" id="4se-GU-kj2"/>
+                <constraint firstAttribute="trailing" secondItem="aEo-QZ-HmH" secondAttribute="trailing" id="Dr6-uh-HP0"/>
+                <constraint firstItem="f0d-YD-Rwl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F9C-Uq-osQ"/>
+                <constraint firstAttribute="trailing" secondItem="OOF-oB-Vs9" secondAttribute="trailing" id="JCw-Ql-z3T"/>
+                <constraint firstItem="OOF-oB-Vs9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TWY-km-hGk"/>
+                <constraint firstItem="aEo-QZ-HmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zz1-lG-yyy"/>
+                <constraint firstItem="f0d-YD-Rwl" firstAttribute="top" secondItem="OOF-oB-Vs9" secondAttribute="bottom" constant="5" id="avb-F0-LaW"/>
+                <constraint firstAttribute="bottom" secondItem="aEo-QZ-HmH" secondAttribute="bottom" id="lWO-m7-exZ"/>
+                <constraint firstAttribute="trailing" secondItem="f0d-YD-Rwl" secondAttribute="trailing" id="pFf-C6-Dhi"/>
+                <constraint firstAttribute="bottom" secondItem="f0d-YD-Rwl" secondAttribute="bottom" id="sYZ-cm-lIG"/>
+                <constraint firstItem="OOF-oB-Vs9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tMf-3p-ldo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="343.5" y="82.5"/>
+        </view>
+    </objects>
+</document>

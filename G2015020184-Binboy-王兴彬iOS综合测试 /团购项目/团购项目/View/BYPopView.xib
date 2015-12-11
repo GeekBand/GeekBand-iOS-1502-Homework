@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="peC-kS-K7w">
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="326"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="gWC-UB-r1n"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="iSA-Ue-Qrv"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hw2-pU-C09">
+                    <rect key="frame" x="188" y="0.0" width="187" height="326"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="B9b-DA-dik"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="IEI-Mi-8dd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="peC-kS-K7w" secondAttribute="bottom" id="26L-5l-IEb"/>
+                <constraint firstItem="Hw2-pU-C09" firstAttribute="leading" secondItem="peC-kS-K7w" secondAttribute="trailing" id="CG6-zY-KYf"/>
+                <constraint firstItem="Hw2-pU-C09" firstAttribute="leading" secondItem="peC-kS-K7w" secondAttribute="trailing" id="Gfa-cA-Zpx"/>
+                <constraint firstItem="peC-kS-K7w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZxS-gs-ii5"/>
+                <constraint firstItem="Hw2-pU-C09" firstAttribute="width" secondItem="peC-kS-K7w" secondAttribute="width" id="fh2-cg-znk"/>
+                <constraint firstItem="peC-kS-K7w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hxL-c3-s39"/>
+                <constraint firstAttribute="trailing" secondItem="Hw2-pU-C09" secondAttribute="trailing" id="jUT-QJ-tXn"/>
+                <constraint firstItem="Hw2-pU-C09" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qvR-yd-9vw"/>
+                <constraint firstAttribute="bottom" secondItem="Hw2-pU-C09" secondAttribute="bottom" id="yHP-Ap-Sxi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftTableView" destination="peC-kS-K7w" id="uqu-To-YHh"/>
+                <outlet property="rightTableView" destination="Hw2-pU-C09" id="4c4-t3-73D"/>
+            </connections>
+            <point key="canvasLocation" x="325.5" y="237"/>
+        </view>
+    </objects>
+</document>

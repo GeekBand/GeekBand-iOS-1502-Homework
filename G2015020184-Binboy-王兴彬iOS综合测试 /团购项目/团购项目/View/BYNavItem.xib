@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYNavItem">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-I5-mP8">
+                    <rect key="frame" x="5" y="5" width="1" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="8F9-vT-gjg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美食" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuE-AV-gw3">
+                    <rect key="frame" x="46" y="1" width="89" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="U2N-uu-FqB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="川菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aui-uA-sHn">
+                    <rect key="frame" x="46" y="19" width="89" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="50L-fb-931"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBf-wU-IUp">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="btn_changeCity"/>
+                    <state key="selected" image="btn_changeCity_selected"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pBf-wU-IUp" secondAttribute="trailing" id="2ps-1y-DJ0"/>
+                <constraint firstAttribute="bottom" secondItem="pBf-wU-IUp" secondAttribute="bottom" id="2tP-GT-lbu"/>
+                <constraint firstAttribute="trailing" secondItem="aui-uA-sHn" secondAttribute="trailing" constant="5" id="75O-5F-RM3"/>
+                <constraint firstItem="KuE-AV-gw3" firstAttribute="leading" secondItem="4Sx-I5-mP8" secondAttribute="trailing" constant="40" id="Adz-Il-ccJ"/>
+                <constraint firstItem="KuE-AV-gw3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="Dcc-2M-mc1"/>
+                <constraint firstItem="pBf-wU-IUp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Onx-GM-Tsi"/>
+                <constraint firstItem="4Sx-I5-mP8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="T4C-vs-iho"/>
+                <constraint firstItem="pBf-wU-IUp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YNp-Yd-vOm"/>
+                <constraint firstAttribute="trailing" secondItem="KuE-AV-gw3" secondAttribute="trailing" constant="5" id="aJY-x4-Jpf"/>
+                <constraint firstAttribute="bottom" secondItem="4Sx-I5-mP8" secondAttribute="bottom" constant="5" id="hue-Kf-JGd"/>
+                <constraint firstAttribute="bottom" secondItem="aui-uA-sHn" secondAttribute="bottom" constant="1" id="i8r-fZ-ErG"/>
+                <constraint firstItem="4Sx-I5-mP8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="mkd-9l-IlN"/>
+                <constraint firstItem="aui-uA-sHn" firstAttribute="leading" secondItem="4Sx-I5-mP8" secondAttribute="trailing" constant="40" id="nfe-5D-bY4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="pBf-wU-IUp" id="o0v-JS-NBd"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_changeCity" width="30" height="30"/>
+        <image name="btn_changeCity_selected" width="30" height="30"/>
+    </resources>
+</document>
